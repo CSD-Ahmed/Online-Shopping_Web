@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Categories - Tarbella</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <div class="logo">Tarbella</div>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="categories.html">Categories</a></li>
+          <li><a href="cart.html">Cart</a></li>
+          <li><a href="login.html">Login/Register</a></li>
+        </ul>
+      </nav>
+      <div class="search-bar">
+        <input type="text" placeholder="Search for anything" />
+        <select>
+          <option>All Categories</option>
+          <option>Motors</option>
+          <option>Electronics</option>
+          <option>Collectibles & Art</option>
+          <!-- Add more categories here -->
+        </select>
+        <button>Search</button>
+        <a href="advanced-search.html" class="advanced-link">Advanced</a>
+      </div>
+    </header>
+
+    <main>
+      <section class="category-products">
+        <h2>Motors</h2>
+        <div class="category-layout">
+          <div class="subcategories">
+            <h3>Subcategories</h3>
+            <ul>
+              <li><a href="motors-parts.html">Parts & Accessories</a></li>
+              <li><a href="motors-cars.html">Cars & Trucks</a></li>
+              <li><a href="motors-motorcycles.html">Motorcycles</a></li>
+              <li><a href="motors-other.html">Other Vehicles</a></li>
+            </ul>
+          </div>
+          <div class="subcategories-images">
+            <div class="image-grid">
+              <div class="image-item">
+                <img src="motors-parts.jpg" alt="Parts & Accessories" />
+                <p>Parts & Accessories</p>
+              </div>
+              <div class="image-item">
+                <img src="motors-cars.jpg" alt="Cars & Trucks" />
+                <p>Cars & Trucks</p>
+              </div>
+              <div class="image-item">
+                <img src="motors-motorcycles.jpg" alt="Motorcycles" />
+                <p>Motorcycles</p>
+              </div>
+              <!-- Add more images here -->
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; 2023 Tarbella. All rights reserved.</p>
+      <div class="footer-links">
+        <a href="all-brands.html">All Brands</a>
+        <a href="all-categories.html">All Categories</a>
+        <a href="seasonal-sales.html">Seasonal Sales & Events</a>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>

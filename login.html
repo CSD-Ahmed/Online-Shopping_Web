@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login/Register - Tarbella</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <div class="logo">Tarbella</div>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="categories.html">Categories</a></li>
+          <li><a href="cart.html">Cart</a></li>
+          <li><a href="login.html">Login/Register</a></li>
+        </ul>
+      </nav>
+      <div class="search-bar">
+        <input type="text" placeholder="Search for anything" />
+        <select>
+          <option>All Categories</option>
+          <option>Motors</option>
+          <option>Electronics</option>
+          <option>Collectibles & Art</option>
+          <!-- Add more categories here -->
+        </select>
+        <button>Search</button>
+        <a href="advanced-search.html" class="advanced-link">Advanced</a>
+      </div>
+    </header>
+
+    <main>
+      <section class="auth-container">
+        <div class="auth-tabs">
+          <button class="tab-link active" onclick="openTab('login')">
+            Login
+          </button>
+          <button class="tab-link" onclick="openTab('register')">
+            Register
+          </button>
+        </div>
+
+        <div id="login" class="auth-tab-content active">
+          <h2>Login to Your Account</h2>
+          <form id="login-form">
+            <label for="login-email">Email</label>
+            <input type="email" id="login-email" required />
+
+            <label for="login-password">Password</label>
+            <input type="password" id="login-password" required />
+
+            <button type="submit">Login</button>
+          </form>
+
+          <div class="social-login">
+            <p>Or continue with:</p>
+            <button class="social-button facebook">
+              Continue with Facebook
+            </button>
+            <button class="social-button google">Continue with Google</button>
+            <button class="social-button apple">Continue with Apple</button>
+          </div>
+        </div>
+
+        <div id="register" class="auth-tab-content">
+          <h2>Create a New Account</h2>
+          <form id="register-form">
+            <label for="register-name">Full Name</label>
+            <input type="text" id="register-name" required />
+
+            <label for="register-email">Email</label>
+            <input type="email" id="register-email" required />
+
+            <label for="register-password">Password</label>
+            <input type="password" id="register-password" required />
+
+            <label for="register-account-type">Account Type</label>
+            <select id="register-account-type" required>
+              <option value="personal">Personal</option>
+              <option value="business">Business</option>
+            </select>
+
+            <button type="submit">Register</button>
+          </form>
+
+          <div class="social-login">
+            <p>Or continue with:</p>
+            <button class="social-button facebook">
+              Continue with Facebook
+            </button>
+            <button class="social-button google">Continue with Google</button>
+            <button class="social-button apple">Continue with Apple</button>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; 2023 Tarbella. All rights reserved.</p>
+      <div class="footer-links">
+        <a href="all-brands.html">All Brands</a>
+        <a href="all-categories.html">All Categories</a>
+        <a href="seasonal-sales.html">Seasonal Sales & Events</a>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>

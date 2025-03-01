@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>All Brands - Tarbella</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <div class="logo">Tarbella</div>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="categories.html">Categories</a></li>
+          <li><a href="cart.html">Cart</a></li>
+          <li><a href="login.html">Login/Register</a></li>
+        </ul>
+      </nav>
+      <div class="search-bar">
+        <input type="text" placeholder="Search for anything" />
+        <select>
+          <option>All Categories</option>
+          <option>Motors</option>
+          <option>Electronics</option>
+          <option>Collectibles & Art</option>
+          <!-- Add more categories here -->
+        </select>
+        <button>Search</button>
+        <a href="advanced-search.html" class="advanced-link">Advanced</a>
+      </div>
+    </header>
+
+    <main>
+      <section class="all-brands">
+        <h2>All Brands</h2>
+        <input
+          type="text"
+          id="brand-search"
+          placeholder="Search brands..."
+          class="search-input"
+        />
+        <div class="brands-grid"></div>
+        <div class="brands-grid">
+          <div class="brand">
+            <img src="brand1-logo.jpg" alt="Brand 1" />
+            <h3>Brand 1</h3>
+            <a href="brand1-products.html">View Products</a>
+          </div>
+          <div class="brand">
+            <img src="brand2-logo.jpg" alt="Brand 2" />
+            <h3>Brand 2</h3>
+            <a href="brand2-products.html">View Products</a>
+          </div>
+          <div class="brand">
+            <img src="brand3-logo.jpg" alt="Brand 3" />
+            <h3>Brand 3</h3>
+            <a href="brand3-products.html">View Products</a>
+          </div>
+          <!-- Add more brands here -->
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; 2023 Tarbella. All rights reserved.</p>
+      <div class="footer-links">
+        <a href="all-brands.html">All Brands</a>
+        <a href="all-categories.html">All Categories</a>
+        <a href="seasonal-sales.html">Seasonal Sales & Events</a>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home - Tarbella</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+  </head>
+  <body>
+    <header>
+      <!-- Top Nav Bars -->
+      <div class="top-nav">
+        <!-- Left-hand Nav Bar -->
+        <div class="top-nav-left">
+          <a href="/signin">Hi! (Sign in)</a>
+          <a href="/daily-deals">Daily Deals</a>
+          <a href="/brand-outlet">Brand Outlet</a>
+          <a href="/gift-cards">Gift Cards</a>
+          <a href="/help-contact">Help & Contact</a>
+        </div>
+
+        <!-- Right-hand Nav Bar -->
+        <div class="top-nav-right">
+          <a href="/sell">Sell</a>
+          <a href="/watchlist">Watchlist</a>
+          <div class="dropdown">
+            <span>My Tarbella</span>
+            <div class="dropdown-content">
+              <a href="/summary">Summary</a>
+              <a href="/recently-viewed">Recently Viewed</a>
+              <a href="/bids-offers">Bids/Offers</a>
+              <a href="/watchlist">Watchlist</a>
+              <a href="/purchase-history">Purchase History</a>
+              <a href="/buy-again">Buy Again</a>
+              <a href="/selling">Selling</a>
+              <a href="/saved-feed">Saved Feed</a>
+              <a href="/saved-searches">Saved Searches</a>
+              <a href="/saved-sellers">Saved Sellers</a>
+              <a href="/my-garage">My Garage</a>
+              <a href="/sizes">Sizes</a>
+              <a href="/my-collection">My Collection</a>
+              <a href="/messages">Messages</a>
+              <a href="/psa-vault">PSA Vault</a>
+            </div>
+          </div>
+          <div class="icon" title="Please sign-in to view notifications">
+            🔔
+          </div>
+          <div class="icon">🛒</div>
+        </div>
+      </div>
+      
+
+      <!-- Logo and Search Bar -->
+      <div class="logo-search">
+        <div class="logo">
+          <span style="color: blue">T</span>ar<span style="color: red">B</span
+          >ella
+        </div>
+        <div class="shop-category">
+            <span>Shop by category</span>
+            <button class="category-toggle">^</button>
+            <div class="category-dropdown">
+              <div class="category-grid">
+                <!-- Motors -->
+                <div class="category-column">
+                  <h4>Motors</h4>
+                  <ul class="subcategories">
+                    <li><a href="/motors-parts-accessories">Parts & Accessories</a></li>
+                    <li><a href="/motors-cars-trucks">Cars & Trucks</a></li>
+                    <li><a href="/motors-motorcycles">Motorcycles</a></li>
+                    <li><a href="/motors-other-vehicles">Other Vehicles</a></li>
+                  </ul>
+                </div>
+            
+                <!-- Electronics -->
+                <div class="category-column">
+                  <h4>Electronics</h4>
+                  <ul class="subcategories">
+                    <li><a href="/electronics-computers-tablets">Computers, Tablets & Network Hardware</a></li>
+                    <li><a href="/electronics-cell-phones">Cell Phones, Smart Watches & Accessories</a></li>
+                    <li><a href="/electronics-video-games">Video Games & Consoles</a></li>
+                    <li><a href="/electronics-cameras-photo">Cameras & Photo</a></li>
+                  </ul>
+                </div>
+            
+                <!-- Clothing & Accessories -->
+                <div class="category-column">
+                  <h4>Clothing & Accessories</h4>
+                  <ul class="subcategories">
+                    <li><a href="/clothing-women">Women</a></li>
+                    <li><a href="/clothing-men">Men</a></li>
+                    <li><a href="/clothing-handbags">Handbags</a></li>
+                    <li><a href="/clothing-sneakers">Collectable Sneakers</a></li>
+                  </ul>
+                </div>
+            
+                <!-- Business & Industrial -->
+                <div class="category-column">
+                  <h4>Business & Industrial</h4>
+                  <ul class="subcategories">
+                    <li><a href="/business-modular-buildings">Modular & Pre-Fabricated Buildings</a></li>
+                    <li><a href="/business-test-equipment">Test, Measurement & Inspection Equipment</a></li>
+                    <li><a href="/business-heavy-equipment">Heavy Equipment, Parts & Attachments</a></li>
+                    <li><a href="/business-restaurant-supplies">Restaurant & Food Service</a></li>
+                  </ul>
+                </div>
+            
+                <!-- Home & Garden -->
+                <div class="category-column">
+                  <h4>Home & Garden</h4>
+                  <ul class="subcategories">
+                    <li><a href="/home-yard-garden">Yard, Garden & Outdoor Living Items</a></li>
+                    <li><a href="/home-tools">Tools & Workshop Equipment</a></li>
+                    <li><a href="/home-improvement">Home Improvement</a></li>
+                    <li><a href="/home-kitchen">Kitchen, Dining & Bar Supplies</a></li>
+                  </ul>
+                </div>
+            
+                <!-- Sporting Goods -->
+                <div class="category-column">
+                  <h4>Sporting Goods</h4>
+                  <ul class="subcategories">
+                    <li><a href="/sports-hunting">Hunting Equipment</a></li>
+                    <li><a href="/sports-golf">Golf Equipment</a></li>
+                    <li><a href="/sports-outdoor">Outdoor Sports</a></li>
+                    <li><a href="/sports-cycling">Cycling Equipment</a></li>
+                  </ul>
+                </div>
+            
+                <!-- Jewelry & Watches -->
+                <div class="category-column">
+                  <h4>Jewelry & Watches</h4>
+                  <ul class="subcategories">
+                    <li><a href="/jewelry-luxury-watches">Luxury Watches</a></li>
+                    <li><a href="/jewelry-wristwatches">Wristwatches</a></li>
+                    <li><a href="/jewelry-fine-jewelry">Fine Jewelry</a></li>
+                    <li><a href="/jewelry-fashion-jewelry">Fashion Jewelry</a></li>
+                  </ul>
+                </div>
+            
+                <!-- Other Categories -->
+                <div class="category-column">
+                  <h4>Other Categories</h4>
+                  <ul class="subcategories">
+                    <li><a href="/other-books">Books</a></li>
+                    <li><a href="/other-movies-music">Movies & Music</a></li>
+                    <li><a href="/other-toys-hobbies">Toys & Hobbies</a></li>
+                    <li><a href="/other-health-beauty">Health & Beauty</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+              <!-- Add more categories and subcategories here -->
+            </ul>
+          </div>
+        </div>
+        <div class="search-container">
+            
+          
+          <!-- Search Box Wrap -->
+<div class="search-box_wrap">
+    <!-- Search Icon -->
+    <i class="search-icon fas fa-search"></i> <!-- Font Awesome search icon -->
+  
+    <!-- Search Box -->
+    <input type="text" placeholder="Search for anything" />
+  
+    <!-- All Categories Dropdown -->
+    <div class="all-categories-dropdown">
+      <button class="all-categories-toggle">All Categories</button>
+      <div class="all-categories-list">
+        <ul>
+          <li><a href="/all-categories">All Categories</a></li>
+          <li><a href="/motors">Motors</a></li>
+          <li><a href="/electronics">Electronics</a></li>
+          <li><a href="/clothing-accessories">Clothing & Accessories</a></li>
+          <li><a href="/business-industrial">Business & Industrial</a></li>
+          <li><a href="/home-garden">Home & Garden</a></li>
+          <li><a href="/sporting-goods">Sporting Goods</a></li>
+          <li><a href="/jewelry-watches">Jewelry & Watches</a></li>
+          <li><a href="/other-categories">Other Categories</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Search Button -->
+  <button class="search-button">Search</button>
+  
+  <!-- Advanced Link -->
+  <a href="/advanced" class="advanced-link">Advanced</a>
+</div>
+      </div>
+
+    <hr class="nav-line" />
+
+        <!-- Navigation Bar -->
+        <nav class="main-nav">
+          <ul>
+            <li><a href="#">Explore (New!)</a></li>
+            <li class="dropdown">
+              <a href="#">Motors</a>
+              <div class="dropdown-content">
+                <a href="#">Parts & Accessories</a>
+                <a href="#">Vehicles</a>
+              </div>
+            </li>
+            <li><a href="#">Electronics</a></li>
+            <li><a href="#">Collectibles</a></li>
+            <li><a href="#">Home & Garden</a></li>
+            <li class="dropdown">
+              <a href="#">Clothing, Shoes & Accessories</a>
+              <div class="dropdown-content">
+                <a href="#">Men</a>
+                <a href="#">Women</a>
+                <a href="#">Kids</a>
+              </div>
+            </li>
+            <li><a href="#">Toys</a></li>
+            <li><a href="#">Sporting Goods</a></li>
+            <li><a href="#">Business & Industrial</a></li>
+            <li><a href="#">Jewelry & Watches</a></li>
+          </ul>
+        </nav>
+    
+        <!-- 4-Page Grid -->
+        <section class="image-grid">
+          <div class="grid-container">
+            <div class="grid-item"><img src="image1.jpg" alt="Image 1" /></div>
+            <div class="grid-item"><img src="image2.jpg" alt="Image 2" /></div>
+            <div class="grid-item"><img src="image3.jpg" alt="Image 3" /></div>
+            <div class="grid-item"><img src="image4.jpg" alt="Image 4" /></div>
+          </div>
+          <button class="scroll-button left">&lt;</button>
+          <button class="scroll-button right">&gt;</button>
+        </section>
+    
+        <!-- Recently Viewed Items -->
+        <section class="recently-viewed">
+          <h2>Your Recently Viewed Items</h2>
+          <div class="recent-items">
+            <div class="item"><img src="recent1.jpg" alt="Recent 1" /></div>
+            <div class="item"><img src="recent2.jpg" alt="Recent 2" /></div>
+            <div class="item"><img src="recent3.jpg" alt="Recent 3" /></div>
+            <div class="item"><img src="recent4.jpg" alt="Recent 4" /></div>
+          </div>
+        </section>
+        
+
+    <footer>
+      <div class="footer-container">
+        <!-- Buy Column -->
+        <div class="footer-column">
+          <h4>Buy</h4>
+          <ul>
+            <li><a href="/registration">Registration</a></li>
+            <li><a href="/bidding-buying-help">Bidding & buying help</a></li>
+            <li><a href="/stores">Stores</a></li>
+            <li><a href="/curator-collections">Curator Collections</a></li>
+            <li><a href="/ebay-for-charity">eBay for Charity</a></li>
+            <li><a href="/charity-shop">Charity Shop</a></li>
+            <li><a href="/seasonal-sales">Seasonal Sales and events</a></li>
+            <li><a href="/ebay-gift-cards">eBay Gift Cards</a></li>
+          </ul>
+        </div>
+
+        <!-- Sell Column -->
+        <div class="footer-column">
+          <h4>Sell</h4>
+          <ul>
+            <li><a href="/start-selling">Start selling</a></li>
+            <li><a href="/how-to-sell">How to sell</a></li>
+            <li><a href="/business-sellers">Business sellers</a></li>
+            <li><a href="/affiliates">Affiliates</a></li>
+            <li><a href="/tools-apps">Tools & apps</a></li>
+            <li><a href="/developers">Developers</a></li>
+          </ul>
+        </div>
+
+        <!-- eBay Companies Column -->
+        <div class="footer-column">
+          <h4>eBay Companies</h4>
+          <ul>
+            <li><a href="/security-center">Security center</a></li>
+            <li><a href="/site-map">Site map</a></li>
+            <li><a href="/tcgplayer">TCGplayer</a></li>
+          </ul>
+        </div>
+
+        <!-- About eBay Column -->
+        <div class="footer-column">
+          <h4>About eBay</h4>
+          <ul>
+            <li><a href="/company-info">Company info</a></li>
+            <li><a href="/news">News</a></li>
+            <li>
+              <a href="/deferred-prosecution-agreement"
+                >Deferred Prosecution Agreement</a
+              >
+            </li>
+            <li><a href="/investors">Investors</a></li>
+            <li><a href="/careers">Careers</a></li>
+            <li><a href="/diversity-inclusion">Diversity & Inclusion</a></li>
+            <li><a href="/global-impact">Global Impact</a></li>
+            <li><a href="/government-relations">Government relations</a></li>
+            <li><a href="/advertise-with-us">Advertise with us</a></li>
+            <li>
+              <a href="/vero-program">Verified Rights Owner (VeRO) Program</a>
+            </li>
+            <li><a href="/eci-licenses">eCI Licenses</a></li>
+          </ul>
+        </div>
+
+        <!-- Help & Contact Column -->
+        <div class="footer-column">
+          <h4>Help & Contact</h4>
+          <ul>
+            <li><a href="/seller-center">Seller Center</a></li>
+            <li><a href="/contact-us">Contact Us</a></li>
+            <li><a href="/ebay-returns">eBay Returns</a></li>
+            <li>
+              <a href="/money-back-guarantee">eBay Money Back Guarantee</a>
+            </li>
+            <li><a href="/announcements">Announcements</a></li>
+            <li><a href="/ebay-community">eBay Community</a></li>
+            <li>
+              <a href="/ebay-for-business-podcast">eBay for Business Podcast</a>
+            </li>
+            <li><a href="/ebay-sites">eBay Sites</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Stay Connected -->
+      <div class="stay-connected">
+        <h4>Stay connected</h4>
+        <div class="social-icons">
+          <a href="https://facebook.com" target="_blank">
+            <i class="fab fa-facebook"></i>
+            <!-- Facebook Icon -->
+          </a>
+          <a href="https://twitter.com" target="_blank">
+            <i class="fab fa-twitter"></i>
+            <!-- Twitter (X) Icon -->
+          </a>
+        </div>
+      </div>
+
+      <!-- Copyright -->
+      <div class="copyright">
+        <p>&copy; 2025 Tarbella. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
