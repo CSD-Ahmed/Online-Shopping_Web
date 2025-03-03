@@ -9,6 +9,7 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
     />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
   </head>
   <body>
     <header>
@@ -16,7 +17,7 @@
       <div class="top-nav">
         <!-- Left-hand Nav Bar -->
         <div class="top-nav-left">
-          <a href="/signin">Hi! (Sign in)</a>
+          <a href="/login.html">Hi! (Sign in)</a>
           <a href="/daily-deals">Daily Deals</a>
           <a href="/brand-outlet">Brand Outlet</a>
           <a href="/gift-cards">Gift Cards</a>
@@ -61,100 +62,105 @@
           <span style="color: blue">T</span>ar<span style="color: red">B</span
           >ella
         </div>
-        <div class="shop-category">
-            <span>Shop by category</span>
-            <button class="category-toggle">^</button>
-            <div class="category-dropdown">
-              <div class="category-grid">
-                <!-- Motors -->
-                <div class="category-column">
-                  <h4>Motors</h4>
-                  <ul class="subcategories">
-                    <li><a href="/motors-parts-accessories">Parts & Accessories</a></li>
-                    <li><a href="/motors-cars-trucks">Cars & Trucks</a></li>
-                    <li><a href="/motors-motorcycles">Motorcycles</a></li>
-                    <li><a href="/motors-other-vehicles">Other Vehicles</a></li>
-                  </ul>
-                </div>
-            
-                <!-- Electronics -->
-                <div class="category-column">
-                  <h4>Electronics</h4>
-                  <ul class="subcategories">
-                    <li><a href="/electronics-computers-tablets">Computers, Tablets & Network Hardware</a></li>
-                    <li><a href="/electronics-cell-phones">Cell Phones, Smart Watches & Accessories</a></li>
-                    <li><a href="/electronics-video-games">Video Games & Consoles</a></li>
-                    <li><a href="/electronics-cameras-photo">Cameras & Photo</a></li>
-                  </ul>
-                </div>
-            
-                <!-- Clothing & Accessories -->
-                <div class="category-column">
-                  <h4>Clothing & Accessories</h4>
-                  <ul class="subcategories">
-                    <li><a href="/clothing-women">Women</a></li>
-                    <li><a href="/clothing-men">Men</a></li>
-                    <li><a href="/clothing-handbags">Handbags</a></li>
-                    <li><a href="/clothing-sneakers">Collectable Sneakers</a></li>
-                  </ul>
-                </div>
-            
-                <!-- Business & Industrial -->
-                <div class="category-column">
-                  <h4>Business & Industrial</h4>
-                  <ul class="subcategories">
-                    <li><a href="/business-modular-buildings">Modular & Pre-Fabricated Buildings</a></li>
-                    <li><a href="/business-test-equipment">Test, Measurement & Inspection Equipment</a></li>
-                    <li><a href="/business-heavy-equipment">Heavy Equipment, Parts & Attachments</a></li>
-                    <li><a href="/business-restaurant-supplies">Restaurant & Food Service</a></li>
-                  </ul>
-                </div>
-            
-                <!-- Home & Garden -->
-                <div class="category-column">
-                  <h4>Home & Garden</h4>
-                  <ul class="subcategories">
-                    <li><a href="/home-yard-garden">Yard, Garden & Outdoor Living Items</a></li>
-                    <li><a href="/home-tools">Tools & Workshop Equipment</a></li>
-                    <li><a href="/home-improvement">Home Improvement</a></li>
-                    <li><a href="/home-kitchen">Kitchen, Dining & Bar Supplies</a></li>
-                  </ul>
-                </div>
-            
-                <!-- Sporting Goods -->
-                <div class="category-column">
-                  <h4>Sporting Goods</h4>
-                  <ul class="subcategories">
-                    <li><a href="/sports-hunting">Hunting Equipment</a></li>
-                    <li><a href="/sports-golf">Golf Equipment</a></li>
-                    <li><a href="/sports-outdoor">Outdoor Sports</a></li>
-                    <li><a href="/sports-cycling">Cycling Equipment</a></li>
-                  </ul>
-                </div>
-            
-                <!-- Jewelry & Watches -->
-                <div class="category-column">
-                  <h4>Jewelry & Watches</h4>
-                  <ul class="subcategories">
-                    <li><a href="/jewelry-luxury-watches">Luxury Watches</a></li>
-                    <li><a href="/jewelry-wristwatches">Wristwatches</a></li>
-                    <li><a href="/jewelry-fine-jewelry">Fine Jewelry</a></li>
-                    <li><a href="/jewelry-fashion-jewelry">Fashion Jewelry</a></li>
-                  </ul>
-                </div>
-            
-                <!-- Other Categories -->
-                <div class="category-column">
-                  <h4>Other Categories</h4>
-                  <ul class="subcategories">
-                    <li><a href="/other-books">Books</a></li>
-                    <li><a href="/other-movies-music">Movies & Music</a></li>
-                    <li><a href="/other-toys-hobbies">Toys & Hobbies</a></li>
-                    <li><a href="/other-health-beauty">Health & Beauty</a></li>
-                  </ul>
-                </div>
-              </div>
+      <!-- Shop by Category -->
+      <div class="shop-category">
+        <span>Shop by category</span>
+        <button class="category-toggle">^</button>
+        <div class="category-dropdown">
+          <div class="category-grid">
+            <!-- Column 1: Motors -->
+            <div class="category-column">
+              <h4><a href="/Motors.html">Motors</a></h4>
+              <ul>
+                <li><a href="/motors-parts-accessories">Parts & Accessories</a></li>
+                <li><a href="/motors-cars-trucks">Cars & Trucks</a></li>
+                <li><a href="/motors-motorcycles">Motorcycles</a></li>
+              </ul>
             </div>
+      
+            <!-- Column 2: Electronics -->
+            <div class="category-column">
+              <h4><a href="/Electronics.html">Electronics</a></h4>
+              <ul>
+                <li><a href="/electronics-computers">Computers</a></li>
+                <li><a href="/electronics-cell-phones">Cell Phones</a></li>
+                <li><a href="/electronics-cameras">Cameras</a></li>
+              </ul>
+            </div>
+      
+            <!-- Column 3: Home & Garden -->
+            <div class="category-column">
+              <h4><a href="/Home & Garden.html">Home & Garden</a></h4>
+              <ul>
+                <li><a href="/home-furniture">Furniture</a></li>
+                <li><a href="/home-decor">Decor</a></li>
+                <li><a href="/home-tools">Tools</a></li>
+              </ul>
+            </div>
+      
+            <!-- Column 4: Clothing, Shoes & Accessories -->
+            <div class="category-column">
+              <h4><a href="/Clothing,Shoes & Accessories.html">Clothing, Shoes & Accessories</a></h4>
+              <ul>
+                <li><a href="/clothing-men">Men</a></li>
+                <li><a href="/clothing-women">Women</a></li>
+                <li><a href="/clothing-kids">Kids</a></li>
+              </ul>
+            </div>
+      
+            <!-- Column 5: Sporting Goods -->
+            <div class="category-column">
+              <h4><a href="/Sporting Goods.html">Sporting Goods</a></h4>
+              <ul>
+                <li><a href="/sports-football">Football</a></li>
+                <li><a href="/sports-basketball">Basketball</a></li>
+                <li><a href="/sports-tennis">Tennis</a></li>
+              </ul>
+            </div>
+      
+            <!-- Column 6: Business & Industrial -->
+            <div class="category-column">
+              <h4><a href="/Business & Industrial.html">Business & Industrial</a></h4>
+              <ul>
+                <li><a href="/business-tools">Tools</a></li>
+                <li><a href="/business-machinery">Machinery</a></li>
+                <li><a href="/business-supplies">Supplies</a></li>
+              </ul>
+            </div>
+      
+            <!-- Column 7: Jewelry & Watches -->
+            <div class="category-column">
+              <h4><a href="/Jewelry & Watches.html">Jewelry & Watches</a></h4>
+              <ul>
+                <li><a href="/jewelry-rings">Rings</a></li>
+                <li><a href="/jewelry-necklaces">Necklaces</a></li>
+                <li><a href="/jewelry-watches">Watches</a></li>
+              </ul>
+            </div>
+      
+            <!-- Column 8: Collectibles & Art -->
+            <div class="category-column">
+              <h4><a href="/Collectibles & Art.html">Collectibles & Art</a></h4>
+              <ul>
+                <li><a href="/collectibles-art">Art</a></li>
+                <li><a href="/collectibles-coins">Coins</a></li>
+                <li><a href="/collectibles-stamps">Stamps</a></li>
+              </ul>
+            </div>
+      
+            <!-- Column 9: Other Categories -->
+            <div class="category-column">
+              <h4><a href="/Other Categories.html">Other Categories</a></h4>
+              <ul>
+                <li><a href="/other-books">Books</a></li>
+                <li><a href="/other-movies-music">Movies & Music</a></li>
+                <li><a href="/other-toys-hobbies">Toys & Hobbies</a></li>
+                <li><a href="/other-health-beauty">Health & Beauty</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
               <!-- Add more categories and subcategories here -->
             </ul>
           </div>
@@ -193,7 +199,7 @@
   <button class="search-button">Search</button>
   
   <!-- Advanced Link -->
-  <a href="/advanced" class="advanced-link">Advanced</a>
+  <a href="/advanced-search.html" class="advanced-link">Advanced</a>
 </div>
       </div>
 
@@ -228,29 +234,24 @@
           </ul>
         </nav>
     
-        <!-- 4-Page Grid -->
-        <section class="image-grid">
-          <div class="grid-container">
-            <div class="grid-item"><img src="image1.jpg" alt="Image 1" /></div>
-            <div class="grid-item"><img src="image2.jpg" alt="Image 2" /></div>
-            <div class="grid-item"><img src="image3.jpg" alt="Image 3" /></div>
-            <div class="grid-item"><img src="image4.jpg" alt="Image 4" /></div>
-          </div>
-          <button class="scroll-button left">&lt;</button>
-          <button class="scroll-button right">&gt;</button>
-        </section>
-    
-        <!-- Recently Viewed Items -->
-        <section class="recently-viewed">
-          <h2>Your Recently Viewed Items</h2>
-          <div class="recent-items">
-            <div class="item"><img src="recent1.jpg" alt="Recent 1" /></div>
-            <div class="item"><img src="recent2.jpg" alt="Recent 2" /></div>
-            <div class="item"><img src="recent3.jpg" alt="Recent 3" /></div>
-            <div class="item"><img src="recent4.jpg" alt="Recent 4" /></div>
-          </div>
-        </section>
+      <!-- Description and Image Grid Section -->
+<section class="description-grid">
+    <!-- Left Side: Description -->
+    <div class="description">
+      <h2>All your faves are here.</h2>
+      <h4>Build an MVP lineup, bag new kicks, and do what you love.</h4>
+      <button class="shop-now-button">Shop now</button>
+    </div>
+  
+    <!-- Right Side: Image Grid -->
+    <div class="image-grid">
+      <div class="grid-item"><img src="Images/Trading cards.webp" alt="Image 1" /></div>
+      <div class="grid-item"><img src="Images/Shouse.webp" alt="Image 2" /></div>
+      <div class="grid-item"><img src="Images/Luxury Watch.webp" alt="Image 3" /></div>
+    </div>
+  </section>
         
+
 
     <footer>
       <div class="footer-container">
@@ -262,10 +263,10 @@
             <li><a href="/bidding-buying-help">Bidding & buying help</a></li>
             <li><a href="/stores">Stores</a></li>
             <li><a href="/curator-collections">Curator Collections</a></li>
-            <li><a href="/ebay-for-charity">eBay for Charity</a></li>
+            <li><a href="/ebay-for-charity">Tarbella for Charity</a></li>
             <li><a href="/charity-shop">Charity Shop</a></li>
             <li><a href="/seasonal-sales">Seasonal Sales and events</a></li>
-            <li><a href="/ebay-gift-cards">eBay Gift Cards</a></li>
+            <li><a href="/ebay-gift-cards">Tarbella Gift Cards</a></li>
           </ul>
         </div>
 
@@ -282,9 +283,9 @@
           </ul>
         </div>
 
-        <!-- eBay Companies Column -->
+        <!-- Tarbella Companies Column -->
         <div class="footer-column">
-          <h4>eBay Companies</h4>
+          <h4>Tarbella Companies</h4>
           <ul>
             <li><a href="/security-center">Security center</a></li>
             <li><a href="/site-map">Site map</a></li>
@@ -292,9 +293,9 @@
           </ul>
         </div>
 
-        <!-- About eBay Column -->
+        <!-- About Tarbella Column -->
         <div class="footer-column">
-          <h4>About eBay</h4>
+          <h4>About Tarbella</h4>
           <ul>
             <li><a href="/company-info">Company info</a></li>
             <li><a href="/news">News</a></li>
@@ -322,16 +323,16 @@
           <ul>
             <li><a href="/seller-center">Seller Center</a></li>
             <li><a href="/contact-us">Contact Us</a></li>
-            <li><a href="/ebay-returns">eBay Returns</a></li>
+            <li><a href="/ebay-returns">Tarbella Returns</a></li>
             <li>
-              <a href="/money-back-guarantee">eBay Money Back Guarantee</a>
+              <a href="/money-back-guarantee">Tarbella Money Back Guarantee</a>
             </li>
             <li><a href="/announcements">Announcements</a></li>
-            <li><a href="/ebay-community">eBay Community</a></li>
+            <li><a href="/ebay-community">Tarbella Community</a></li>
             <li>
-              <a href="/ebay-for-business-podcast">eBay for Business Podcast</a>
+              <a href="/ebay-for-business-podcast">Tarbella for Business Podcast</a>
             </li>
-            <li><a href="/ebay-sites">eBay Sites</a></li>
+            <li><a href="/ebay-sites">Tarbella Sites</a></li>
           </ul>
         </div>
       </div>

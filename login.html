@@ -2,110 +2,375 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Login/Register - Tarbella</title>
-    <link rel="stylesheet" href="styles.css" />
+    <title>Cool Login and Registration Form | By Code Info</title>
+
+    <!-- Font Awesome Cdn Link -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
   </head>
   <body>
-    <header>
-      <div class="logo">Tarbella</div>
-      <nav>
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="categories.html">Categories</a></li>
-          <li><a href="cart.html">Cart</a></li>
-          <li><a href="login.html">Login/Register</a></li>
-        </ul>
-      </nav>
-      <div class="search-bar">
-        <input type="text" placeholder="Search for anything" />
-        <select>
-          <option>All Categories</option>
-          <option>Motors</option>
-          <option>Electronics</option>
-          <option>Collectibles & Art</option>
-          <!-- Add more categories here -->
-        </select>
-        <button>Search</button>
-        <a href="advanced-search.html" class="advanced-link">Advanced</a>
-      </div>
-    </header>
-
-    <main>
-      <section class="auth-container">
-        <div class="auth-tabs">
-          <button class="tab-link active" onclick="openTab('login')">
-            Login
-          </button>
-          <button class="tab-link" onclick="openTab('register')">
-            Register
-          </button>
-        </div>
-
-        <div id="login" class="auth-tab-content active">
-          <h2>Login to Your Account</h2>
-          <form id="login-form">
-            <label for="login-email">Email</label>
-            <input type="email" id="login-email" required />
-
-            <label for="login-password">Password</label>
-            <input type="password" id="login-password" required />
-
-            <button type="submit">Login</button>
-          </form>
-
-          <div class="social-login">
-            <p>Or continue with:</p>
-            <button class="social-button facebook">
-              Continue with Facebook
-            </button>
-            <button class="social-button google">Continue with Google</button>
-            <button class="social-button apple">Continue with Apple</button>
+    <div class="wrapper">
+      <!-- Sign In Form -->
+      <div class="form-container sign-in">
+        <h1>Hello Again!</h1>
+        <p>
+          Welcome back you've <br />
+          been missed!
+        </p>
+        <form id="signin-form">
+          <input
+            type="text"
+            id="signin-username"
+            placeholder="Enter username"
+          />
+          <span class="error-message" id="signin-username-error"></span>
+          <input type="password" id="signin-password" placeholder="Password" />
+          <span class="error-message" id="signin-password-error"></span>
+          <div class="remember-me">
+            <input type="checkbox" id="remember" />
+            <label for="remember">Remember Me</label>
           </div>
+          <p class="recover">
+            <a href="#">Forgot Password?</a>
+          </p>
+          <button type="submit">Sign in</button>
+        </form>
+        <p class="or">----- or continue with -----</p>
+        <div class="icons">
+          <i class="fab fa-google"></i>
+          <i class="fab fa-github"></i>
+          <i class="fab fa-facebook"></i>
         </div>
-
-        <div id="register" class="auth-tab-content">
-          <h2>Create a New Account</h2>
-          <form id="register-form">
-            <label for="register-name">Full Name</label>
-            <input type="text" id="register-name" required />
-
-            <label for="register-email">Email</label>
-            <input type="email" id="register-email" required />
-
-            <label for="register-password">Password</label>
-            <input type="password" id="register-password" required />
-
-            <label for="register-account-type">Account Type</label>
-            <select id="register-account-type" required>
-              <option value="personal">Personal</option>
-              <option value="business">Business</option>
-            </select>
-
-            <button type="submit">Register</button>
-          </form>
-
-          <div class="social-login">
-            <p>Or continue with:</p>
-            <button class="social-button facebook">
-              Continue with Facebook
-            </button>
-            <button class="social-button google">Continue with Google</button>
-            <button class="social-button apple">Continue with Apple</button>
-          </div>
+        <div class="not-member">
+          Not a member? <a href="#" class="register-link">Register Now</a>
         </div>
-      </section>
-    </main>
-
-    <footer>
-      <p>&copy; 2023 Tarbella. All rights reserved.</p>
-      <div class="footer-links">
-        <a href="all-brands.html">All Brands</a>
-        <a href="all-categories.html">All Categories</a>
-        <a href="seasonal-sales.html">Seasonal Sales & Events</a>
       </div>
-    </footer>
 
-    <script src="script.js"></script>
+      <!-- Register Form -->
+      <div class="form-container register">
+        <h1>Create Account</h1>
+        <p>Please fill in the form to register!</p>
+        <form id="register-form">
+          <input
+            type="text"
+            id="register-username"
+            placeholder="Enter username"
+          />
+          <span class="error-message" id="register-username-error"></span>
+          <input type="email" id="register-email" placeholder="Enter email" />
+          <span class="error-message" id="register-email-error"></span>
+          <input
+            type="password"
+            id="register-password"
+            placeholder="Password"
+          />
+          <span class="error-message" id="register-password-error"></span>
+          <input
+            type="password"
+            id="register-confirm-password"
+            placeholder="Confirm Password"
+          />
+          <span
+            class="error-message"
+            id="register-confirm-password-error"
+          ></span>
+          <button type="submit">Register</button>
+        </form>
+        <div class="not-member">
+          Already a member? <a href="#" class="signin-link">Sign In</a>
+        </div>
+      </div>
+    </div>
+
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "Poppins", sans-serif;
+      }
+
+      body {
+        background: #dfe9f5;
+      }
+
+      .wrapper {
+        width: 330px;
+        padding: 2rem 0 1rem 0;
+        margin: 50px auto;
+        background: #fff;
+        border-radius: 10px;
+        text-align: center;
+        box-shadow: 0 20px 35px rgba(0, 0, 0, 0.1);
+        position: relative;
+        overflow: hidden;
+      }
+
+      .wrapper .form-container {
+        transition: transform 0.3s ease;
+      }
+
+      .wrapper .form-container.register {
+        position: absolute;
+        top: 0;
+        left: 100%;
+        width: 100%;
+        padding: 2rem 0 1rem 0;
+      }
+
+      .wrapper.active .form-container.sign-in {
+        transform: translateX(-100%);
+      }
+
+      .wrapper.active .form-container.register {
+        transform: translateX(-100%);
+      }
+
+      h1 {
+        font-size: 2rem;
+        color: #07001f;
+      }
+
+      p {
+        margin-bottom: 1.7rem;
+      }
+
+      form input {
+        width: 85%;
+        outline: none;
+        border: none;
+        background: #dfe9f5;
+        padding: 12px 14px;
+        margin-bottom: 10px;
+        border-radius: 10px;
+      }
+
+      .remember-me {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 1rem;
+      }
+
+      .remember-me input {
+        width: auto;
+        margin-right: 0.5rem;
+      }
+
+      .remember-me label {
+        font-size: 0.9rem;
+        color: #07001f;
+      }
+
+      .recover {
+        text-align: right;
+        font-size: 0.8rem;
+        margin: 0.2rem 1.7rem 0 0;
+      }
+
+      .recover a {
+        text-decoration: none;
+        color: #07001f;
+      }
+
+      button {
+        font-size: 1.1rem;
+        margin-top: 1rem;
+        padding: 8px 0;
+        border-radius: 5px;
+        outline: none;
+        border: none;
+        width: 85%;
+        background: tomato;
+        color: #fff;
+        cursor: pointer;
+      }
+
+      button:hover {
+        background: rgba(122, 30, 30, 0.767);
+      }
+
+      .or {
+        font-size: 0.8rem;
+        margin-top: 1.5rem;
+      }
+
+      .icons i {
+        color: #07001f;
+        padding: 0.8rem 1.5rem;
+        border-radius: 10px;
+        margin-left: 0.9rem;
+        font-size: 1.5rem;
+        cursor: pointer;
+        border: 2px solid #dfe9f5;
+      }
+
+      .icons i:hover {
+        color: #fff !important;
+        background: #07001f;
+        transition: 1s;
+      }
+
+      .icons i:first-child {
+        color: green;
+      }
+
+      .icons i:last-child {
+        color: blue;
+      }
+
+      .not-member {
+        font-size: 0.8rem;
+        margin-top: 1.4rem;
+      }
+
+      .not-member a {
+        color: tomato;
+        text-decoration: none;
+      }
+
+      a:hover {
+        text-decoration: underline;
+      }
+      .error-message {
+        color: red;
+        font-size: 0.8rem;
+        margin-top: -0.5rem;
+        margin-bottom: 0.5rem;
+        display: block;
+        text-align: left;
+        padding-left: 1rem;
+      }
+    </style>
+
+    <script>
+      // JavaScript to toggle between forms
+      const wrapper = document.querySelector(".wrapper");
+      const registerLink = document.querySelector(".register-link");
+      const signinLink = document.querySelector(".signin-link");
+
+      registerLink.addEventListener("click", (event) => {
+        event.preventDefault(); // Prevent default link behavior
+        wrapper.classList.add("active"); // Show register form
+      });
+
+      signinLink.addEventListener("click", (event) => {
+        event.preventDefault(); // Prevent default link behavior
+        wrapper.classList.remove("active"); // Show sign-in form
+      });
+
+      // Form Validation
+      const signinForm = document.getElementById("signin-form");
+      const registerForm = document.getElementById("register-form");
+
+      // Sign In Form Validation
+      signinForm.addEventListener("submit", (event) => {
+        event.preventDefault(); // Prevent form submission
+        const username = document
+          .getElementById("signin-username")
+          .value.trim();
+        const password = document
+          .getElementById("signin-password")
+          .value.trim();
+
+        // Clear previous errors
+        document.getElementById("signin-username-error").textContent = "";
+        document.getElementById("signin-password-error").textContent = "";
+
+        let isValid = true;
+
+        if (!username) {
+          document.getElementById("signin-username-error").textContent =
+            "Username is required";
+          isValid = false;
+        }
+
+        if (!password) {
+          document.getElementById("signin-password-error").textContent =
+            "Password is required";
+          isValid = false;
+        }
+
+        if (isValid) {
+          alert("Sign In Successful!");
+          // You can submit the form here or redirect the user
+        }
+      });
+
+      // Register Form Validation
+      registerForm.addEventListener("submit", (event) => {
+        event.preventDefault(); // Prevent form submission
+        const username = document
+          .getElementById("register-username")
+          .value.trim();
+        const email = document.getElementById("register-email").value.trim();
+        const password = document
+          .getElementById("register-password")
+          .value.trim();
+        const confirmPassword = document
+          .getElementById("register-confirm-password")
+          .value.trim();
+
+        // Clear previous errors
+        document.getElementById("register-username-error").textContent = "";
+        document.getElementById("register-email-error").textContent = "";
+        document.getElementById("register-password-error").textContent = "";
+        document.getElementById("register-confirm-password-error").textContent =
+          "";
+
+        let isValid = true;
+
+        if (!username) {
+          document.getElementById("register-username-error").textContent =
+            "Username is required";
+          isValid = false;
+        }
+
+        if (!email) {
+          document.getElementById("register-email-error").textContent =
+            "Email is required";
+          isValid = false;
+        } else if (!validateEmail(email)) {
+          document.getElementById("register-email-error").textContent =
+            "Invalid email format";
+          isValid = false;
+        }
+
+        if (!password) {
+          document.getElementById("register-password-error").textContent =
+            "Password is required";
+          isValid = false;
+        } else if (password.length < 6) {
+          document.getElementById("register-password-error").textContent =
+            "Password must be at least 6 characters";
+          isValid = false;
+        }
+
+        if (!confirmPassword) {
+          document.getElementById(
+            "register-confirm-password-error"
+          ).textContent = "Confirm Password is required";
+          isValid = false;
+        } else if (password !== confirmPassword) {
+          document.getElementById(
+            "register-confirm-password-error"
+          ).textContent = "Passwords do not match";
+          isValid = false;
+        }
+
+        if (isValid) {
+          alert("Registration Successful!");
+          // You can submit the form here or redirect the user
+        }
+      });
+
+      // Helper function to validate email
+      function validateEmail(email) {
+        const regex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        return regex.test(email);
+      }
+    </script>
   </body>
 </html>

@@ -90,9 +90,88 @@ body {
   margin-right: 30px; /* Space between logo and shop by category */
 }
 
+/* Shop by Category */
 .shop-category {
   position: relative;
   margin-right: 20px;
+}
+
+.shop-category span {
+  font-size: 14px;
+  color: #333;
+}
+
+.shop-category .category-toggle {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 14px;
+  color: #333;
+  padding: 0 5px;
+}
+
+.shop-category .category-dropdown {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  min-width: 600px; /* Wider dropdown for 3x3 grid */
+  padding: 20px;
+}
+
+.shop-category.active .category-dropdown {
+  display: block;
+}
+
+/* 3x3 Grid Layout */
+.category-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 columns */
+  gap: 20px; /* Space between items */
+}
+
+.category-grid .category-column {
+  display: flex;
+  flex-direction: column;
+}
+
+.category-grid .category-column h4 {
+  font-size: 16px;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.category-grid .category-column h4 a {
+  text-decoration: none;
+  color: #333;
+}
+
+.category-grid .category-column h4 a:hover {
+  color: #007bff; /* Change color on hover */
+}
+
+.category-grid .category-column ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.category-grid .category-column ul li {
+  margin-bottom: 8px;
+}
+
+.category-grid .category-column ul li a {
+  text-decoration: none;
+  color: #555;
+  font-size: 14px;
+}
+
+.category-grid .category-column ul li a:hover {
+  color: #007bff; /* Change color on hover */
 }
 
 /* Container for the search box and 'Shop by Category' dropdown */
@@ -576,140 +655,6 @@ body {
   margin: 20px 0;
 }
 
-/* Login/Register Page Styles */
-.auth-container {
-  max-width: 500px;
-  margin: 20px auto;
-  padding: 20px;
-  border: 1px solid #ddd;
-  border-radius: 8px;
-  background-color: #f9f9f9;
-}
-
-.auth-tabs {
-  display: flex;
-  margin-bottom: 20px;
-}
-
-.auth-tabs .tab-link {
-  flex: 1;
-  padding: 10px;
-  text-align: center;
-  background-color: #ddd;
-  border: none;
-  cursor: pointer;
-  font-size: 16px;
-  transition: background-color 0.3s ease;
-}
-
-.auth-tabs .tab-link.active {
-  background-color: #007bff;
-  color: white;
-}
-
-.auth-tab-content {
-  display: none;
-}
-
-.auth-tab-content.active {
-  display: block;
-}
-
-.auth-tab-content h2 {
-  font-size: 24px;
-  margin-bottom: 20px;
-  text-align: center;
-}
-
-.auth-tab-content form {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-}
-
-.auth-tab-content label {
-  font-size: 16px;
-  font-weight: bold;
-}
-
-.auth-tab-content input,
-.auth-tab-content select {
-  padding: 8px;
-  border: 1px solid #ddd;
-  border-radius: 4px;
-  font-size: 16px;
-}
-
-.auth-tab-content button[type="submit"] {
-  padding: 10px;
-  background-color: #007bff;
-  color: white;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-  font-size: 16px;
-  transition: background-color 0.3s ease;
-}
-
-.auth-tab-content button[type="submit"]:hover {
-  background-color: #0056b3;
-}
-
-.social-login {
-  margin-top: 20px;
-  text-align: center;
-}
-
-.social-login p {
-  font-size: 16px;
-  margin-bottom: 10px;
-}
-
-.social-button {
-  display: block;
-  width: 100%;
-  padding: 10px;
-  margin-bottom: 10px;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-  font-size: 16px;
-  transition: background-color 0.3s ease;
-}
-
-.social-button.facebook {
-  background-color: #1877f2;
-  color: white;
-}
-
-.social-button.facebook:hover {
-  background-color: #165dbb;
-}
-
-.social-button.google {
-  background-color: #db4437;
-  color: white;
-}
-
-.social-button.google:hover {
-  background-color: #b3362b;
-}
-
-.social-button.apple {
-  background-color: #000;
-  color: white;
-}
-
-.social-button.apple:hover {
-  background-color: #333;
-}
-/* Error Message Styles */
-.error-message {
-  color: red;
-  font-size: 14px;
-  margin-top: 5px;
-}
-
 /* Advanced Search Page Styles */
 .advanced-search {
   max-width: 800px;
@@ -1000,70 +945,67 @@ body {
   display: block;
 }
 
-/* 4-Page Grid */
-.image-grid {
-  position: relative;
-  margin: 20px 0;
-}
-
-.grid-container {
+/* Description and Image Grid Section */
+.description-grid {
   display: flex;
-  overflow: hidden;
-}
-
-.grid-item {
-  flex: 0 0 25%;
-  padding: 10px;
-}
-
-.grid-item img {
-  width: 100%;
-  border-radius: 8px;
-}
-
-.scroll-button {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  background-color: rgba(0, 0, 0, 0.5);
-  color: white;
-  border: none;
-  padding: 10px;
-  cursor: pointer;
-  font-size: 18px;
-}
-
-.scroll-button.left {
-  left: 10px;
-}
-
-.scroll-button.right {
-  right: 10px;
-}
-
-/* Recently Viewed Items */
-.recently-viewed {
+  align-items: center;
+  justify-content: space-between;
+  padding: 40px 20px;
+  background-color: aqua;
+  border-radius: 12px;
   margin: 20px 0;
 }
 
-.recently-viewed h2 {
-  font-size: 24px;
+/* Left Side: Description */
+.description {
+  flex: 1;
+  max-width: 50%;
+  padding-right: 20px;
+}
+
+.description h2 {
+  font-size: 32px;
   margin-bottom: 10px;
+  color: #333;
 }
 
-.recent-items {
-  display: flex;
+.description h4 {
+  font-size: 18px;
+  color: #555;
+  margin-bottom: 20px;
+}
+
+.shop-now-button {
+  padding: 12px 24px;
+  border: none;
+  border-radius: 25px; /* Rounded button */
+  background-color: #230fdf;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.shop-now-button:hover {
+  background-color: #1a0bb0; /* Darker blue on hover */
+}
+
+/* Right Side: Image Grid */
+.image-grid {
+  flex: 1;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
   gap: 10px;
 }
 
-.recent-items .item {
-  flex: 0 0 25%;
-}
-
-.recent-items .item img {
+.image-grid .grid-item img {
   width: 100%;
   border-radius: 8px;
 }
+
+/* Start Recently Viewed Items */
+
+/* End Recently Viewed Items */
 
 /* Footer Container */
 .footer-container {
@@ -1167,3 +1109,5 @@ body {
 .stay-connected .social-icons a:hover {
   color: #007bff; /* Change color on hover */
 }
+
+/* Electronic Shop CSS*/

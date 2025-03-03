@@ -1,0 +1,811 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jewelry & Watches - Tarbella</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+  </head>
+  <body>
+    <!-- Logo in the Top Left -->
+    <div class="logo">
+      <span style="color: blue">T</span>ar<span style="color: red">B</span>ella
+    </div>
+
+    <!-- Left Side: Shop by Category, Trending Topics, Shop Top Brands -->
+    <div class="left-side">
+      <h1>Jewelry & Watches</h1>
+      <hr class="nav-line" />
+
+      <!-- Shop by Category -->
+      <div class="shop-by-category">
+        <h2>Shop by Category</h2>
+        <ul>
+          <li><a href="/cameras-photo">Cameras & Photo</a></li>
+          <li>
+            <a href="/cell-phones-accessories">Cell Phones & Accessories</a>
+          </li>
+          <li>
+            <a href="/computers-tablets-networking"
+              >Computers/Tablets & Networking</a
+            >
+          </li>
+          <li><a href="/home-surveillance">Home Surveillance</a></li>
+          <li><a href="/major-appliances">Major Appliances</a></li>
+          <li>
+            <a href="/portable-audio-headphones">Portable Audio & Headphones</a>
+          </li>
+          <li>
+            <a href="/surveillance-smart-home"
+              >Surveillance & Smart Home Electronics</a
+            >
+          </li>
+          <li><a href="/tv-video-home-audio">TV, Video & Home Audio</a></li>
+          <li>
+            <a href="/vehicle-electronics-gps">Vehicle Electronics & GPS</a>
+          </li>
+          <li><a href="/video-games-consoles">Video Games & Consoles</a></li>
+          <li><a href="/virtual-reality">Virtual Reality</a></li>
+        </ul>
+      </div>
+
+      <!-- Trending Topics -->
+      <div class="trending-topics">
+        <h2>Trending Topics</h2>
+        <p>Up to 60% off eBay Refurbished.</p>
+      </div>
+
+      <!-- Shop Top Brands -->
+      <div class="shop-top-brands">
+        <h2>Shop Top Brands</h2>
+        <ul>
+          <li><a href="/alienware">Alienware</a></li>
+          <li><a href="/apple">Apple</a></li>
+          <li><a href="/asus">Asus</a></li>
+          <li><a href="/beats-by-dre">Beats by Dre</a></li>
+          <li><a href="/bose">Bose</a></li>
+          <li><a href="/canon">Canon</a></li>
+          <li><a href="/dell">Dell</a></li>
+          <li><a href="/dji">DJI</a></li>
+          <li><a href="/fujifilm">Fujifilm</a></li>
+          <li><a href="/google">Google</a></li>
+          <li><a href="/gopro">GoPro</a></li>
+          <li><a href="/hp">HP</a></li>
+          <li><a href="/kodak">Kodak</a></li>
+          <li><a href="/lenovo">Lenovo</a></li>
+          <li><a href="/lg">LG</a></li>
+          <li><a href="/microsoft">Microsoft</a></li>
+          <li><a href="/nest">Nest</a></li>
+          <li><a href="/nikon">Nikon</a></li>
+          <li><a href="/om-systems">OM Systems</a></li>
+          <li><a href="/onkyo">Onkyo</a></li>
+          <li><a href="/polaroid">Polaroid</a></li>
+          <li><a href="/popsockets">PopSockets</a></li>
+          <li><a href="/samsung">Samsung</a></li>
+          <li><a href="/sonos">Sonos</a></li>
+          <li><a href="/sony">Sony</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Right Side: Cards -->
+    <div class="right-side">
+      <h2>Shop by Category</h2>
+      <div class="card-grid">
+        <!-- Card 1 -->
+        <div class="card">
+          <div class="bg"></div>
+          <div class="blob"></div>
+          <img
+            src="Images/dell-ultrasharp-27-4k-usb-c-hub-monitor-u2723qe_xdaw.492.webp"
+            alt="Computer"
+            class="card-image"
+          />
+          <div class="content">
+            <p class="title">Monitor</p>
+            <p class="price">
+              <span class="original-price">Was:$740.99 </span>
+              <span class="discount-price">$650.99 </span>
+            </p>
+            <span class="discount">15% off</span>
+            <button
+              class="buy-now"
+              onclick="openModal('electronics', 'Computer')"
+            >
+              <i class="fas fa-shopping-basket"></i> In Detail
+            </button>
+          </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="card">
+          <div class="bg"></div>
+          <div class="blob"></div>
+          <img src="Images/Mac Laptop.jpeg" alt="Laptop" class="card-image" />
+          <div class="content">
+            <p class="title">Mac Laptop</p>
+            <p class="price">
+              <span class="original-price">Was:$740.99 </span>
+              <span class="discount-price">$650.99 </span>
+            </p>
+            <span class="discount">15% off</span>
+            <button
+              class="buy-now"
+              onclick="openModal('electronics', 'Laptop')"
+            >
+              <i class="fas fa-shopping-basket"></i> In Detail
+            </button>
+          </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="card">
+          <div class="bg"></div>
+          <div class="blob"></div>
+          <img src="Images/CANON-EOS-R5.webp" alt="Canon" class="card-image" />
+          <div class="content">
+            <p class="title">Canon Camera</p>
+            <p class="price">
+              <span class="original-price">Was:$740.99 </span>
+              <span class="discount-price">$650.99 </span>
+            </p>
+            <span class="discount">15% off</span>
+            <button class="buy-now" onclick="openModal('electronics', 'Canon')">
+              <i class="fas fa-shopping-basket"></i> In Detail
+            </button>
+          </div>
+        </div>
+
+        <!-- Card 4 -->
+        <div class="card">
+          <div class="bg"></div>
+          <div class="blob"></div>
+          <img
+            src="Images/Samsung Galaxy S23 Ultra.jpeg"
+            alt="Smartphone"
+            class="card-image"
+          />
+          <div class="content">
+            <p class="title">Samsung Galaxy S23 Ultra</p>
+            <p class="price">
+              <span class="original-price">Was:$740.99 </span>
+              <span class="discount-price">$650.99 </span>
+            </p>
+            <span class="discount">15% off</span>
+            <button
+              class="buy-now"
+              onclick="openModal('electronics', 'Smartphone')"
+            >
+              <i class="fas fa-shopping-basket"></i> In Detail
+            </button>
+          </div>
+        </div>
+
+        <!-- Card 5 -->
+        <div class="card">
+          <div class="bg"></div>
+          <div class="blob"></div>
+          <img
+            src="Images/Acer Veriton E430.webp"
+            alt="Case"
+            class="card-image"
+          />
+          <div class="content">
+            <p class="title">Case</p>
+            <p class="price">
+              <span class="original-price">Was:$740.99 </span>
+              <span class="discount-price">$650.99 </span>
+            </p>
+            <span class="discount">15% off</span>
+            <button class="buy-now" onclick="openModal('electronics', 'Case')">
+              <i class="fas fa-shopping-basket"></i> In Detail
+            </button>
+          </div>
+        </div>
+
+        <!-- Card 6 -->
+        <div class="card">
+          <div class="bg"></div>
+          <div class="blob"></div>
+          <img
+            src="Images/Samsung galaxy tab s6.jpeg"
+            alt="SmartTablet"
+            class="card-image"
+          />
+          <div class="content">
+            <p class="title">Samsung galaxy tab</p>
+            <p class="price">
+              <span class="original-price">Was:$740.99 </span>
+              <span class="discount-price">$650.99 </span>
+            </p>
+            <span class="discount">15% off</span>
+            <button
+              class="buy-now"
+              onclick="openModal('electronics', 'Samsung galaxy tab s6')"
+            >
+              <i class="fas fa-shopping-basket"></i> In Detail
+            </button>
+          </div>
+        </div>
+
+        <!-- Card 7 -->
+        <div class="card">
+          <div class="bg"></div>
+          <div class="blob"></div>
+          <img
+            src="Images/PlayStation 5 Console.jpeg"
+            alt="PlayStation 5 Console"
+            class="card-image"
+          />
+          <div class="content">
+            <p class="title">PlayStation 5 Console</p>
+            <p class="price">
+              <span class="original-price">Was:$740.99 </span>
+              <span class="discount-price">$650.99 </span>
+            </p>
+            <span class="discount">15% off</span>
+            <button
+              class="buy-now"
+              onclick="openModal('electronics', 'PlayStation 5 Console')"
+            >
+              <i class="fas fa-shopping-basket"></i> In Detail
+            </button>
+          </div>
+        </div>
+
+        <!-- Card 8 -->
+        <div class="card">
+          <div class="bg"></div>
+          <div class="blob"></div>
+          <img
+            src="Images/Home Surveillance.jpg"
+            alt="SecurityCamera"
+            class="card-image"
+          />
+          <div class="content">
+            <p class="title">Security-Camera</p>
+            <p class="price">
+              <span class="original-price">Was:$740.99 </span>
+              <span class="discount-price">$650.99 </span>
+            </p>
+            <span class="discount">15% off</span>
+            <button
+              class="buy-now"
+              onclick="openModal('electronics', 'Home Surveillance')"
+            >
+              <i class="fas fa-shopping-basket"></i> In Detail
+            </button>
+          </div>
+        </div>
+
+        <!-- Card 9 -->
+        <div class="card">
+          <div class="bg"></div>
+          <div class="blob"></div>
+          <img src="Images/Headphone.webp" alt="Headphone" class="card-image" />
+          <div class="content">
+            <p class="title">Headphone</p>
+            <p class="price">
+              <span class="original-price">Was:$740.99 </span>
+              <span class="discount-price">$650.99 </span>
+            </p>
+            <span class="discount">15% off</span>
+            <button
+              class="buy-now"
+              onclick="openModal('electronics', 'Headphone')"
+            >
+              <i class="fas fa-shopping-basket"></i> In Detail
+            </button>
+          </div>
+        </div>
+
+        <!-- Card 10 -->
+        <div class="card">
+          <div class="bg"></div>
+          <div class="blob"></div>
+          <img src="Images/Smart-TV.jpg" alt="SmartTV" class="card-image" />
+          <div class="content">
+            <p class="title">Smart-TV</p>
+            <p class="price">
+              <span class="original-price">Was:$740.99 </span>
+              <span class="discount-price">$650.99 </span>
+            </p>
+            <span class="discount">15% off</span>
+            <button
+              class="buy-now"
+              onclick="openModal('electronics', 'Smart-TV')"
+            >
+              <i class="fas fa-shopping-basket"></i> In Detail
+            </button>
+          </div>
+        </div>
+
+        <!-- Card 11 -->
+        <div class="card">
+          <div class="bg"></div>
+          <div class="blob"></div>
+          <img src="Images/VR.jpg" alt="VR" class="card-image" />
+          <div class="content">
+            <p class="title">virtual Reality</p>
+            <p class="price">
+              <span class="original-price">Was:$740.99 </span>
+              <span class="discount-price">$650.99 </span>
+            </p>
+            <span class="discount">15% off</span>
+            <button class="buy-now" onclick="openModal('electronics', 'VR')">
+              <i class="fas fa-shopping-basket"></i> In Detail
+            </button>
+          </div>
+        </div>
+
+        <!-- Card 12 -->
+        <div class="card">
+          <div class="bg"></div>
+          <div class="blob"></div>
+          <img
+            src="Images/refrigerator.jpg"
+            alt="Refrigerator"
+            class="card-image"
+          />
+          <div class="content">
+            <p class="title">Refrigerator</p>
+            <p class="price">
+              <span class="original-price">Was:$740.99 </span>
+              <span class="discount-price">$650.99 </span>
+            </p>
+            <span class="discount">15% off</span>
+            <button
+              class="buy-now"
+              onclick="openModal('electronics', 'Refrigerator')"
+            >
+              <i class="fas fa-shopping-basket"></i> In Detail
+            </button>
+          </div>
+        </div>
+        <!-- Add more cards here -->
+      </div>
+    </div>
+
+    <!-- Modal Structure -->
+    <div id="modal" class="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <h2 id="modal-title">Product Details</h2>
+        <div class="modal-body">
+          <img
+            id="modal-image"
+            src=""
+            alt="Product Image"
+            class="modal-image"
+          />
+          <p id="modal-description">
+            This is a detailed description of the product.ahmed
+          </p>
+          <div class="modal-details">
+            <div class="quantity">
+              <label for="quantity">Quantity:</label>
+              <input
+                type="number"
+                id="quantity"
+                name="quantity"
+                min="1"
+                value="1"
+              />
+            </div>
+            <div class="color">
+              <label for="color">Color:</label>
+              <select id="color" name="color">
+                <option value="black">Black</option>
+                <option value="white">White</option>
+                <option value="silver">Silver</option>
+                <option value="blue">Blue</option>
+                <option value="blue">Gold</option>
+              </select>
+            </div>
+            <p id="total-price">Total Price: <span id="price"></span></p>
+          </div>
+          <button id="order-now" class="order-now">Order Now</button>
+        </div>
+      </div>
+    </div>
+
+    <style>
+      /* Add your CSS here */
+      /* General Styles */
+      body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+      }
+
+      .logo {
+        font-size: 32px;
+        font-weight: bold;
+        padding: 20px;
+
+        top: 0;
+        left: 0;
+        z-index: 1000;
+        background-color: #f8f9fa;
+
+        border-bottom: 1px solid #ddd;
+      }
+
+      .logo span {
+        color: blue;
+      }
+
+      .logo span:last-child {
+        color: red;
+      }
+
+      /* Left Side: Shop by Category, Trending Topics, Shop Top Brands */
+      .left-side {
+        width: 25%;
+        padding: 100px 20px 20px 20px;
+        background-color: #f8f9fa;
+        border-right: 1px solid #ddd;
+        position: relative;
+        z-index: 1;
+      }
+
+      .left-side h1 {
+        font-size: 32px;
+        margin-bottom: 20px;
+      }
+
+      .shop-by-category h2,
+      .trending-topics h2,
+      .shop-top-brands h2 {
+        font-size: 24px;
+        margin-bottom: 10px;
+      }
+
+      .shop-by-category ul,
+      .shop-top-brands ul {
+        list-style: none;
+        padding: 0;
+      }
+
+      .shop-by-category ul li,
+      .shop-top-brands ul li {
+        margin-bottom: 8px;
+      }
+
+      .shop-by-category ul li a,
+      .shop-top-brands ul li a {
+        text-decoration: none;
+        color: #333;
+        font-size: 16px;
+      }
+
+      .shop-by-category ul li a:hover,
+      .shop-top-brands ul li a:hover {
+        color: #007bff;
+      }
+
+      .trending-topics p {
+        font-size: 16px;
+        color: #555;
+      }
+
+      /* Right Side: Cards */
+      .right-side {
+        position: absolute;
+        top: 60px;
+        right: 5px;
+        width: 70%;
+        padding: 20px;
+        z-index: 2;
+      }
+
+      .right-side h2 {
+        font-size: 24px;
+        margin-bottom: 20px;
+      }
+
+      .card-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 30px;
+      }
+
+      /* Card Styles */
+      .card {
+        position: relative;
+        width: 200px;
+        height: 300px; /* Increased height to accommodate content */
+        border-radius: 14px;
+        z-index: 1111;
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start; /* Align content to the top */
+        box-shadow: 20px 20px 60px #bebebe, -20px -20px 60px #ffffff;
+        cursor: pointer;
+        background: #fff; /* Add background color */
+      }
+
+      .bg {
+        position: absolute;
+        top: 5px;
+        left: 5px;
+        width: 190px;
+        height: 290px; /* Adjusted height */
+        z-index: 2;
+        background: rgba(255, 255, 255, 0.95);
+        backdrop-filter: blur(24px);
+        border-radius: 10px;
+        overflow: hidden;
+        outline: 2px solid white;
+      }
+
+      .blob {
+        position: absolute;
+        z-index: 1;
+        top: 50%;
+        left: 50%;
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        background-color: #ff0000;
+        opacity: 1;
+        filter: blur(12px);
+        animation: blob-bounce 5s infinite ease;
+      }
+
+      @keyframes blob-bounce {
+        0% {
+          transform: translate(-100%, -100%) translate3d(0, 0, 0);
+        }
+
+        25% {
+          transform: translate(-100%, -100%) translate3d(100%, 0, 0);
+        }
+
+        50% {
+          transform: translate(-100%, -100%) translate3d(100%, 100%, 0);
+        }
+
+        75% {
+          transform: translate(-100%, -100%) translate3d(0, 100%, 0);
+        }
+
+        100% {
+          transform: translate(-100%, -100%) translate3d(0, 0, 0);
+        }
+      }
+
+      /* Image Styles */
+      .card-image {
+        position: relative; /* Changed to relative */
+        width: 100%; /* Full width of the card */
+        height: 150px; /* Fixed height for images */
+        object-fit: cover; /* Ensure the image covers the area */
+        border-radius: 10px 10px 0 0; /* Rounded corners at the top */
+        z-index: 3; /* Bring image to the front */
+      }
+
+      /* Content Styles */
+      .content {
+        position: relative;
+        z-index: 3;
+        text-align: center;
+        color: #333;
+        padding: 10px; /* Add padding for spacing */
+        width: 100%; /* Full width */
+      }
+
+      .content .title {
+        font-size: 18px;
+        font-weight: bold;
+        margin-bottom: 8px;
+      }
+
+      .content .description {
+        font-size: 14px;
+        color: #555;
+        margin-bottom: 8px;
+      }
+
+      .content .price {
+        font-size: 16px;
+        margin: 5px 0;
+        color: #333;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 10px; /* Space between price and discount */
+      }
+
+      .content .price .original-price {
+        text-decoration: line-through; /* Line-through for original price */
+        color: #888; /* Gray color for original price */
+        font-size: 0.875rem;
+      }
+      .content .price .discount-price {
+        font-size: 1rem;
+        font-weight: 700;
+      }
+      .content .price .discount {
+        color: #ff0000; /* Red color for discount */
+        font-weight: bold;
+      }
+      .discount {
+        color: #ff0000; /* Red color for discount */
+        font-weight: bold;
+      }
+
+      .buy-now {
+        margin-top: 10px;
+        padding: 10px 20px;
+        background: #007bff;
+        color: white;
+        border: none;
+        cursor: pointer;
+        border-radius: 4px;
+        transition: background 0.3s;
+        width: 100%; /* Full width button */
+      }
+
+      .buy-now:hover {
+        background: #0056b3;
+      }
+      /* Modal Styles */
+      .modal {
+        display: none;
+        position: fixed;
+        z-index: 1000;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.5);
+        overflow: auto;
+      }
+
+      .modal-content {
+        background-color: #fff;
+        margin: 10% auto;
+        padding: 20px;
+        border-radius: 10px;
+        width: 90%;
+        max-width: 500px;
+        position: relative;
+      }
+
+      .close {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        font-size: 24px;
+        font-weight: bold;
+        cursor: pointer;
+      }
+
+      .close:hover {
+        color: #ff0000;
+      }
+
+      .modal-body {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+      }
+
+      .modal-image {
+        width: 100%;
+        max-height: 200px;
+        object-fit: cover;
+        border-radius: 10px;
+      }
+
+      .modal-details {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+      }
+
+      .quantity,
+      .color {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+
+      .quantity input {
+        width: 60px;
+        padding: 5px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+      }
+
+      .color select {
+        width: 100px;
+        padding: 5px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+      }
+
+      #total-price {
+        font-size: 18px;
+        font-weight: bold;
+        text-align: center;
+      }
+
+      .order-now {
+        padding: 10px 20px;
+        background: #007bff;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 16px;
+        transition: background 0.3s;
+      }
+
+      .order-now:hover {
+        background: #0056b3;
+      }
+    </style>
+    <script>
+      // Get the modal and its elements
+      const modal = document.getElementById("modal");
+      const modalTitle = document.getElementById("modal-title");
+      const modalImage = document.getElementById("modal-image");
+      const modalDescription = document.getElementById("modal-description");
+      const quantityInput = document.getElementById("quantity");
+      const totalPrice = document.getElementById("price");
+      const orderNowButton = document.getElementById("order-now");
+      const closeModal = document.querySelector(".close");
+
+      // Function to open the modal
+      function openModal(productType, productName) {
+        // Set modal content based on the product
+        modalTitle.textContent = productName;
+        modalImage.src = `Images/${productName.toLowerCase()}.jpg`; // Adjust image path as needed
+        modalDescription.textContent = `This is a detailed description of the ${productName}.`;
+
+        // Calculate and display total price
+        const price = 650.99; // Replace with dynamic price if needed
+        quantityInput.value = 1;
+        totalPrice.textContent = `$${price}`;
+
+        // Update total price when quantity changes
+        quantityInput.addEventListener("input", () => {
+          const quantity = parseInt(quantityInput.value);
+          totalPrice.textContent = `$${(price * quantity).toFixed(2)}`;
+        });
+
+        // Redirect to basket when Order Now is clicked
+        orderNowButton.onclick = () => {
+          alert("Order placed! Redirecting to basket...");
+          // Redirect to basket page (replace with your basket URL)
+          window.location.href = "/basket";
+        };
+
+        // Show the modal
+        modal.style.display = "block";
+      }
+
+      // Close the modal when the close button is clicked
+      closeModal.onclick = () => {
+        modal.style.display = "none";
+      };
+
+      // Close the modal when clicking outside of it
+      window.onclick = (event) => {
+        if (event.target === modal) {
+          modal.style.display = "none";
+        }
+      };
+    </script>
+    <script src="script.js"></script>
+  </body>
+</html>

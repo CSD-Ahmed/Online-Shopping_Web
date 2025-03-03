@@ -49,6 +49,7 @@ document.addEventListener("click", (event) => {
     shopCategory.classList.remove("active");
   }
 });
+
 // Render Cart Items
 function renderCart() {
   const cartList = document.getElementById("cart-list");
@@ -128,127 +129,6 @@ function openTab(tabName) {
     .querySelector(`.tab-link[onclick="openTab('${tabName}')"]`)
     .classList.add("active");
 }
-
-// Login Form Validation and Submission
-document.getElementById("login-form").addEventListener("submit", function (e) {
-  e.preventDefault();
-
-  const email = document.getElementById("login-email").value.trim();
-  const password = document.getElementById("login-password").value.trim();
-
-  // Clear previous error messages
-  clearErrors("login-form");
-
-  // Validate email
-  if (!email) {
-    showError("login-email", "Email is required.");
-    return;
-  } else if (!validateEmail(email)) {
-    showError("login-email", "Please enter a valid email address.");
-    return;
-  }
-
-  // Validate password
-  if (!password) {
-    showError("login-password", "Password is required.");
-    return;
-  } else if (password.length < 6) {
-    showError("login-password", "Password must be at least 6 characters.");
-    return;
-  }
-
-  // Simulate login logic (replace with actual backend integration)
-  alert(`Logged in with Email: ${email}`);
-  console.log(`Password: ${password}`); // Do not log passwords in real applications
-});
-
-// Register Form Validation and Submission
-document
-  .getElementById("register-form")
-  .addEventListener("submit", function (e) {
-    e.preventDefault();
-
-    const name = document.getElementById("register-name").value.trim();
-    const email = document.getElementById("register-email").value.trim();
-    const password = document.getElementById("register-password").value.trim();
-    const accountType = document.getElementById("register-account-type").value;
-
-    // Clear previous error messages
-    clearErrors("register-form");
-
-    // Validate name
-    if (!name) {
-      showError("register-name", "Full name is required.");
-      return;
-    }
-
-    // Validate email
-    if (!email) {
-      showError("register-email", "Email is required.");
-      return;
-    } else if (!validateEmail(email)) {
-      showError("register-email", "Please enter a valid email address.");
-      return;
-    }
-
-    // Validate password
-    if (!password) {
-      showError("register-password", "Password is required.");
-      return;
-    } else if (password.length < 6) {
-      showError("register-password", "Password must be at least 6 characters.");
-      return;
-    }
-
-    // Simulate registration logic (replace with actual backend integration)
-    alert(
-      `Registered with Name: ${name}, Email: ${email}, Account Type: ${accountType}`
-    );
-    console.log(`Password: ${password}`); // Do not log passwords in real applications
-  });
-
-// Social Login Buttons (Simulated)
-document.querySelectorAll(".social-button").forEach((button) => {
-  button.addEventListener("click", function () {
-    // Simulate social login logic (replace with actual integration)
-    alert(`Continue with ${button.textContent}`);
-  });
-});
-
-// Helper Functions
-
-// Validate email format
-function validateEmail(email) {
-  const regex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-  return regex.test(email);
-}
-
-// Show error message for a specific input field
-function showError(inputId, message) {
-  const inputField = document.getElementById(inputId);
-  const errorMessage = document.createElement("div");
-  errorMessage.className = "error-message";
-  errorMessage.textContent = message;
-  errorMessage.style.color = "red";
-  errorMessage.style.fontSize = "14px";
-  errorMessage.style.marginTop = "5px";
-  inputField.parentNode.appendChild(errorMessage);
-}
-
-// Clear all error messages for a form
-function clearErrors(formId) {
-  const form = document.getElementById(formId);
-  const errorMessages = form.querySelectorAll(".error-message");
-  errorMessages.forEach((error) => error.remove());
-}
-
-// Update Price Range Display
-const priceRange = document.getElementById("price-range");
-const priceRangeDisplay = document.getElementById("price-range-display");
-
-priceRange.addEventListener("input", function () {
-  priceRangeDisplay.textContent = `$${this.value}`;
-});
 
 // Advanced Search Form Submission
 document
@@ -346,16 +226,3 @@ function renderBrands(brands) {
     brandsGrid.appendChild(brandElement);
   });
 }
-
-// Auto-scroll functionality for the 4-page grid
-const gridContainer = document.querySelector(".grid-container");
-const scrollLeft = document.querySelector(".scroll-button.left");
-const scrollRight = document.querySelector(".scroll-button.right");
-
-scrollLeft.addEventListener("click", () => {
-  gridContainer.scrollBy({ left: -300, behavior: "smooth" });
-});
-
-scrollRight.addEventListener("click", () => {
-  gridContainer.scrollBy({ left: 300, behavior: "smooth" });
-});
